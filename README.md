@@ -1,5 +1,7 @@
 # ecpc - Easy Comandline Pipeline Computation
 
+![ecpc logo](ecpc.svg)
+
 ## QUICK START - BASIC USAGE
 ```
 nextflow run https://github.com/grpiccoli/ecpc \
