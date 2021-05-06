@@ -1,23 +1,25 @@
-# ecpc
+# ecpc - Easy Comandline Pipeline Computation
 
 ## QUICK START - BASIC USAGE
 ```
 nextflow run https://github.com/grpiccoli/ecpc \
---c <container url> \
---a <arguments>
---i <input(s)>
+--i "<input(s)>" \
+--c "<container url>" \
+--a "<arguments>"
 ```
 
 ### OPTIONS:
-| Options       | Default Value                      | Description
+| Basic Options | Default Value                      | Description
 | ------------- | ---------------------------------- | ---------------------------------------
-| --c         |                       | **REQUIRED** path to input bam, fastx file  
-| --a           |  | **REQUIRED** arguments  
-| --i           |  | **REQUIRED** inputs    
-| **Advanced Options** |                         |
+| --c         | *REQUIRED* | path to input bam, fastx file  
+| --a           | *REQUIRED* |  arguments  
+| --i           | *REQUIRED* |  inputs    
+| **Advanced Options** | **Default Value**                        |
 | --m           | 24.GB                   | RAM memory allocation  
 | --p           | 12                      | CPU core allocation  
-| **HPC Options** |                         |
+| --o           | output                   | default output folder  
+| --o_f           | *                   | expected output files to keep, * will keep everything  
+| **HPC Options** | **Default Value**                        |
 | --e           | local                   | nextflow executor (slurm, local, etc)  
 | --q           | quicktest                  | queue/partition name  
 | --t           | 1h                      | max execution time  

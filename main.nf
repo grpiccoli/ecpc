@@ -19,11 +19,10 @@ process ecpc {
     file r from input
 
     output:
-    file "*" into ecpc
+    file params.o_f into ecpc
 
     script:
     """
     $params.a
-    $r
     """
 }
