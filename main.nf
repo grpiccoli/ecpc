@@ -1,11 +1,11 @@
 #!/usr/bin/env nextflow
-Channel.fromPath(params.i, type: 'file')
+Channel.fromPath(params.i1, type: 'file')
 .buffer(size:1)
 .set{
     input1;
 }
 
-Channel.fromPath(params.i, type: 'file')
+Channel.fromPath(params.i2, type: 'file')
 .buffer(size:1)
 .set{
     input2;
