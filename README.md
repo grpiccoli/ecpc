@@ -13,7 +13,7 @@ nextflow run https://github.com/grpiccoli/ecpc \
 ### OPTIONS:
 | Basic Options | Default Value                      | Description
 | ------------- | ---------------------------------- | ---------------------------------------
-| --c         | *REQUIRED* | path to input bam, fastx file  
+| --c         | *REQUIRED* | container url:tag    
 | --a           | *REQUIRED* |  arguments  
 | --i           | *REQUIRED* |  inputs    
 | **Advanced Options** | **Default Value**                        |
